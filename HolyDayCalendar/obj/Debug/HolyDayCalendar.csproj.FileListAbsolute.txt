@@ -1,0 +1,13 @@
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\bin\Debug\HolyDayCalendar.dll
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\bin\Debug\HolyDayCalendar.pdb
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\bin\Debug\HolyDayCalendar.dll.mdb
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\bin\Debug\HolyDayCalendar.HolyDayCalendar.apk
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\bin\Debug\HolyDayCalendar.HolyDayCalendar-Signed.apk
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\obj\Debug\HolyDayCalendar.dll
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\obj\Debug\HolyDayCalendar.pdb
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\obj\Debug\android\bin\HolyDayCalendar.HolyDayCalendar.apk
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\obj\Debug\res\layout\main.xml
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\obj\Debug\res\values\strings.xml
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\obj\Debug\res\drawable\icon.png
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\obj\Debug\R.cs.flag
+C:\Users\JHaas\Documents\Projects\jeroldhaas\HolyDayCalendar\HolyDayCalendar\obj\Debug\uploadflags.txt

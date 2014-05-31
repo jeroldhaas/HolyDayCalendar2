@@ -1,0 +1,2 @@
+HolyDayCalendar.MainActivity;holydaycalendar.MainActivity
+HolyDayCalendar.MainActivity.HybridWebViewClient;holydaycalendar.MainActivity_HybridWebViewClient
