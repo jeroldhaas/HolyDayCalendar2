@@ -6,22 +6,33 @@ open System.Globalization
 open System.Xml
 open NodaTime
 
+open HolyDayCalendar
 
 
 [<EntryPoint>]
 let main argv = 
-    let nowJulian = new LocalDateTime(
-                        DateTime.Now.Year,
-                        DateTime.Now.Month,
-                        DateTime.Now.Day,
-                        DateTime.Now.Hour,
-                        DateTime.Now.Minute,
-                        CalendarSystem.GetJulianCalendar(0) // TODO: this int may need adjustment for accuracy
+    let nowNative = DateTime.Now
+    let nowGregorian = new LocalDateTime(
+                        nowNative.Year,
+                        nowNative.Month,
+                        nowNative.Day,
+                        nowNative.Hour,
+                        nowNative.Minute,
+                        CalendarSystem.GetGregorianCalendar(1)
     )
-    let nowCoptic = nowJulian.WithCalendar(CalendarSystem.GetCopticCalendar(0)) // TODO: adjust int?
-
-    printfn "
-        Julian: %A
-        Coptic: %A"
-        (nowJulian.ToString(), nowCoptic.ToString()) |> ignore // was using argv
+    let nowCoptic = new LocalDateTime(
+                        nowNative.Year,
+                        nowNative.Month,
+                        nowNative.Day,
+                        nowNative.Hour,
+                        nowNative.Minute,
+                        CalendarSystem.GetCopticCalendar(1)
+    ) // TODO: adjust int if needed
+    
+    // duh - print the results :)
+    printfn "Native:\t\t %A" (nowNative.Date.ToLongDateString())
+    printfn "Gregorian:\t %A" (nowGregorian.Date.ToString())
+    printfn "Coptic:\t\t %A" (nowCoptic.Date.ToString()) 
+    printfn "Press Enter: "
+    let input = Console.ReadLine()
     0 // return an integer exit code
