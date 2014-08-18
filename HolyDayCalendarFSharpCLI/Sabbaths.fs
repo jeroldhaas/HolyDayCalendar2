@@ -98,6 +98,7 @@ type FixedString(len:Int32, value: String) = struct
 // structs!
 /// <summary>
 /// Example of how to use a complex struct type (Date, Time, OHLCV)
+/// This struct should have no default values
 /// </summary>
 type StructThing(d: DateTime, o: float, h: float, l: float, c: float, v: int) =
     struct
@@ -108,6 +109,8 @@ type StructThing(d: DateTime, o: float, h: float, l: float, c: float, v: int) =
         member this.Low = l
         member this.Close = c
         member this.Volume = v
+        member this.GetToday = DateTime.Now
+        member this.GetTodayUtc = DateTime.UtcNow
     end
 type MPoint =
     struct
