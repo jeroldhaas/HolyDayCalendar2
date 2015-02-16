@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="5af574ee-9991-4a00-81e9-c04443b623e9"
+  name="Years" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="aef78fcc-b422-4960-9642-30147b8b44b3">
+      <packageMoniker
+        Id="61ca32c2-abb3-4c3a-af66-47c6d63107f2"
+        LastKnownName="Months"
+        LastKnownLocation="Package_1754.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="15c9843f-f894-4bb5-93c6-66545af1506b"
+        name="Year"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2b37c7a3-7f9f-4b51-99c2-5a3a9480db8a"
+            name="type"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e9751680-42d4-459d-824c-06a4d225f907"
+            name="Next"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="43f955b4-972b-4435-b7f8-d24f0988d5da"
+            name="Prev"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="81796297-1b73-45a2-a2a8-c439de235ffd"
+            name="IsLeap"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b2466b93-e45e-47bb-a42f-fd8ab6ebd564"
+            name="NMonths"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="03605e3d-c647-429e-963d-6ec63e6f6360"
+            name="Months"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4b210b2b-4fe2-440a-a0ae-9d6b83f46445"
+            name="Num"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="efc0a38f-6cc5-4a52-a215-22500580f1d4"
+            name="Year"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="394aa2e2-1de2-4267-921b-769116d22c52"
+                  name="int y"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a6dafa8f-465c-4e94-afbe-1f9e44dbb205"
+            name="Year"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ce59c201-f558-48d5-946f-13a8fefd8368"
+                  name="int y"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f5c97d1a-e224-4904-9181-5c82506edc95"
+                  name="bool isLeap"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="33efec2e-ef05-4b37-bfd1-a05144aeb9e4"
+        name="SolarYear"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0aba98aa-042a-4322-ad0b-79c6bf3d6085"
+            name="type"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="5e3ea366-e42c-4ca3-9c3e-d0622d44e4a3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="15c9843f-f894-4bb5-93c6-66545af1506b"
+              LastKnownName="Year"
+              LastKnownLocation="Package_1812.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2a4718a6-f889-4e2e-aee7-7a7e0d0a33f1"
+        name="LunarYear"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="001e3dcb-e576-496e-a18a-45ec9631133d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="15c9843f-f894-4bb5-93c6-66545af1506b"
+              LastKnownName="Year"
+              LastKnownLocation="Package_1812.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

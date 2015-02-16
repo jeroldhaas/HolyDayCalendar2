@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="01be35f6-6c15-4f7a-a82d-fa60225288ec"
+  name="Days" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="e271af92-990d-4e04-8d29-b11588b7ee8e">
+      <packageMoniker
+        Id="61ca32c2-abb3-4c3a-af66-47c6d63107f2"
+        LastKnownName="Months"
+        LastKnownLocation="Package_1754.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="cbbf3efe-710c-440d-82b1-5af8f01ac381"
+        name="Day"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="291d8c57-9f7c-4704-9551-6ad9c82ac119"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="825ec98c-6244-4507-b10d-f7042ec4a276"
+            name="SetDoubleParasha"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b2459ebd-ce60-498c-9dd9-6baba53a95bb"
+            name="PentecostSab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e33b374b-88ba-41f7-ab30-cc320807d828"
+            name="PentecostSabbathCheck"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="05649d66-65a9-4427-bd97-e3ffdf82fc59"
+            name="SetHagim"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4fda6132-e121-48af-8ad7-209cc0d137e6"
+            name="MonthName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="9672496e-6cad-460b-9474-b1f060a7db39"
+        name="DayOfWeek"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="111a7074-b118-4f5f-ac23-7abd37badb8f"
+            name="INVALID" />
+          <enumerationLiteral
+            Id="ab220c1e-813a-4075-86d4-72d82e1f5717"
+            name="Sunday" />
+          <enumerationLiteral
+            Id="6d238ca6-07f2-4627-9a80-236ccc116eaf"
+            name="Monday" />
+          <enumerationLiteral
+            Id="05438a88-9a79-43b9-b857-cf68e665d62d"
+            name="Tuesday" />
+          <enumerationLiteral
+            Id="53462ae9-a66b-445e-a915-635b59b0e12f"
+            name="Wednesday" />
+          <enumerationLiteral
+            Id="3090ea22-d111-4bbd-9303-fe6ec4491385"
+            name="Thursday" />
+          <enumerationLiteral
+            Id="467086df-02b5-486e-a481-372e55de526c"
+            name="Friday" />
+          <enumerationLiteral
+            Id="9d6deba7-c655-4f28-b342-662952af9427"
+            name="Sadurday" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

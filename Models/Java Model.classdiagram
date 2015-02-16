@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="398df9e7-92c0-43fe-a9f5-1cf4e876c251" name="Java Model" linkedPackageId="202693ea-5f27-4da7-88d0-8e1e08107714" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="04864123-9036-4e75-a885-e6e511604512">
+      <profileInstance Id="dd1e7321-d4d1-42f8-a678-d680feb4d88b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4ac8f045-6eb9-4f82-9bd0-33451900c505">
+      <profileInstance Id="ca2001f5-4603-487d-8de9-dc97652e0a86" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="e5c324c8-a0f9-4a09-b117-fb751e15cafa" name="Months">
+        <elementDefinition Id="61ca32c2-abb3-4c3a-af66-47c6d63107f2" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <enumeration Id="e7b8165d-f5ee-4a6b-9f3c-57a2d4818d40" name="LunarMonths" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="bd7c1cdb-7b96-4ab8-8f15-dff84b49ddff" />
+              <ownedLiterals>
+                <enumerationLiteral Id="c920c8de-6b5e-4e4b-96ab-de41912ed594" name="Tishri">
+                  <elementDefinition Id="a4767365-bdd5-42e6-9b54-755c0836fbd2" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="e33c0a88-fd1f-4649-a392-1effcfe9d1d1" name="Heshvan">
+                  <elementDefinition Id="53dd8965-cc94-4ce0-a212-9619dfcc4849" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="a2a77931-9f30-4d6f-b031-0ab4f26ae597" name="Kislev">
+                  <elementDefinition Id="46013994-2484-4f03-a677-65b96de5667c" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="73aa1828-d54d-45eb-aca7-c77d20187ef4" name="Tebeth">
+                  <elementDefinition Id="eacccc18-0fdf-4fed-9065-907e4cbad0f5" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="99a001a9-3c73-4b1a-962f-4f7b904a5d90" name="Shebat">
+                  <elementDefinition Id="a773b8e0-cd9e-45ba-8c1e-e65ca680e845" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="49b31388-dfae-45da-89d2-ee5d355e6c3e" name="AdarI">
+                  <elementDefinition Id="44878b27-92d3-4e1c-be65-f885cd26229d" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="58d37d94-3090-45f6-b710-f83a6fc8b964" name="AdarII">
+                  <elementDefinition Id="c9bd449c-2f02-4832-8120-77321d7dc3e2" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="5dc827b4-7aa6-4765-a6ac-be4b10502bb5" name="Nisan">
+                  <elementDefinition Id="e38ea905-87c2-4712-b189-a49e6aeef276" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="8a782196-1b1e-4330-bdfa-28978888675b" name="Iyar">
+                  <elementDefinition Id="cecff6d3-d1f4-4574-8c01-d19223efff46" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="7619d8df-0cf9-42fa-9abd-8477cac94218" name="Sivan">
+                  <elementDefinition Id="5837e3ca-798e-496c-9959-ee38a5e7f533" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="ee2c8eea-5984-42a8-8e79-2654b523db6b" name="Tammuz">
+                  <elementDefinition Id="e4dbc808-b3cb-411b-84a0-0e3d07ce145c" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="1aea2b44-d660-442b-b80a-da1f16913fd1" name="Ab">
+                  <elementDefinition Id="5182e109-c39e-4e36-96ae-2d991a60feba" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="18ee2df4-d540-45e5-9ec9-1cd7e395f7b6" name="Elul">
+                  <elementDefinition Id="32b569b6-ad39-4e6b-b39d-614b3e549b17" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="9fba00a3-f542-4d6c-9ac3-22c9dc5f299f" name="Adar">
+                  <elementDefinition Id="a2275ec3-6667-46ca-8220-7a263014c9e8" />
+                </enumerationLiteral>
+              </ownedLiterals>
+            </enumeration>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <enumeration Id="a02ff19e-6ad5-41e9-8e7f-6d5d34519c28" name="SolarMonths" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="e9bf2392-e868-4a0a-898a-6147b9166edd" />
+              <ownedLiterals>
+                <enumerationLiteral Id="7e52729e-fa41-4f91-b7f0-b3d50247e2f2" name="January">
+                  <elementDefinition Id="94d151c3-e90f-4432-a019-3ce505092923" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="2d7d7a35-fb11-4646-b6a5-cc808432b738" name="February">
+                  <elementDefinition Id="42c53ae6-0756-4997-92bf-ab134e8fc713" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="1823f69a-fa41-4863-9166-0fbd9c224b85" name="March">
+                  <elementDefinition Id="71555a45-e8cd-4903-80ea-857650b53b87" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="9bab2526-2c14-4490-90a6-da9dcd8f1019" name="April">
+                  <elementDefinition Id="13cc45b7-3ccd-4ee8-aede-9d69069ef642" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="535d7342-fc16-4421-8e96-b7fc4a1311d9" name="May">
+                  <elementDefinition Id="48e9eb6b-f34e-45e8-8a86-2c4fce92f5a8" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="66b1363d-7dfa-488c-8924-d9f394891b1a" name="June">
+                  <elementDefinition Id="74ad5998-7978-45df-b743-6dcbc0f0aae7" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="81aa2452-3f70-461e-a550-0b02244f069b" name="August">
+                  <elementDefinition Id="79b41caf-ea30-477a-b676-fb8ff77ff4d5" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="4bfeb788-e4d3-41c9-819b-fa408a514a9e" name="September">
+                  <elementDefinition Id="a630cab2-8ff7-4508-9756-7ab1e96309dd" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="8aa31ac9-3816-4266-ad56-d148a59f6102" name="October">
+                  <elementDefinition Id="303cfa56-8447-4835-aac2-f82fbeb854d6" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="56e6c46b-8d44-4c39-aa5b-094ba764208b" name="November">
+                  <elementDefinition Id="87951b32-04be-4f3e-aca1-f860138b3e80" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="3e67fcc5-820b-4600-93ab-513f7176ce70" name="December">
+                  <elementDefinition Id="e64f131a-b788-4408-817b-91e702f4b923" />
+                </enumerationLiteral>
+              </ownedLiterals>
+            </enumeration>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6254f6fe-a4a9-40de-9b64-ceb5ec1c4dff" name="Month" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="91e2df40-bd43-4cfc-b225-511dd5ee21cc" />
+              <ownedAttributesInternal>
+                <property Id="f4207e1b-d2be-43fa-a4d2-cda51b43b990" name="Num" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="95ab7b85-07ee-4fd0-b65e-e360e1ba80c4" />
+                </property>
+                <property Id="e26d87c6-5ee3-47f7-86fd-1bde0c803c25" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cfe00445-f385-49c7-a91a-efe0835a6a42" />
+                </property>
+                <property Id="88bf549c-894a-4938-9977-fa33e927840d" name="NDays" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8030f70c-b8a0-4f93-99ee-8c92a2d9f46c" />
+                </property>
+                <property Id="cefa47fd-b649-43ee-8fde-0c9b5ce7c1df" name="Days" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b28a1c3b-9108-439c-ab51-80fbc845880d" />
+                </property>
+                <property Id="4c477cce-71c8-4485-8333-f446380a11d3" name="Year" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6847405f-7cc5-413c-a9b4-c6654b182231" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="a8eac408-70e3-4a5c-a14c-a458863b1c78" name="Days">
+        <elementDefinition Id="01be35f6-6c15-4f7a-a82d-fa60225288ec" />
+        <suppliersInternal>
+          <dependency Id="eaf97f8e-c753-4ba7-89ca-acb48e48c30b">
+            <packageMoniker Id="e5c324c8-a0f9-4a09-b117-fb751e15cafa" LastKnownName="Months" />
+            <elementDefinition Id="e271af92-990d-4e04-8d29-b11588b7ee8e" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="c3864e86-5906-4c83-9b07-8ed9608526bd" name="Day" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cbbf3efe-710c-440d-82b1-5af8f01ac381" />
+              <ownedOperationsInternal>
+                <operation Id="33b555b3-7a08-4559-8b82-2c005545d65c" name="Name" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="291d8c57-9f7c-4704-9551-6ad9c82ac119" />
+                </operation>
+                <operation Id="3cd75a64-2fa5-431b-b25f-886f1c65751d" name="SetDoubleParasha" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="825ec98c-6244-4507-b10d-f7042ec4a276" />
+                </operation>
+                <operation Id="749a1700-6e7c-497a-aa2e-8693df07b1a8" name="PentecostSab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b2459ebd-ce60-498c-9dd9-6baba53a95bb" />
+                </operation>
+                <operation Id="3b5094f1-1b7e-4ac0-b91c-aeb35c5c2441" name="PentecostSabbathCheck" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e33b374b-88ba-41f7-ab30-cc320807d828" />
+                </operation>
+                <operation Id="92dc9b5d-fe4a-4848-b6d0-94152b80d618" name="SetHagim" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="05649d66-65a9-4427-bd97-e3ffdf82fc59" />
+                </operation>
+                <operation Id="4cd2d256-fd3b-4d0d-9d9c-f0f9428cea19" name="MonthName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4fda6132-e121-48af-8ad7-209cc0d137e6" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <enumeration Id="501fd21c-5390-4cab-8d74-1c791afe7bdd" name="DayOfWeek" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="9672496e-6cad-460b-9474-b1f060a7db39" />
+              <ownedLiterals>
+                <enumerationLiteral Id="e0a87e33-9ac0-46b9-b94f-95cd8c0f5d41" name="INVALID">
+                  <elementDefinition Id="111a7074-b118-4f5f-ac23-7abd37badb8f" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="14d17042-8adb-4cbf-8e8f-08935d6229c0" name="Sunday">
+                  <elementDefinition Id="ab220c1e-813a-4075-86d4-72d82e1f5717" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="54086548-9a67-49b8-b9f2-cf0626fdf34b" name="Monday">
+                  <elementDefinition Id="6d238ca6-07f2-4627-9a80-236ccc116eaf" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="798d4825-f373-45a6-9836-ae4125a9ae36" name="Tuesday">
+                  <elementDefinition Id="05438a88-9a79-43b9-b857-cf68e665d62d" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="cc86e629-9210-4714-ac9c-62edfb0d8978" name="Wednesday">
+                  <elementDefinition Id="53462ae9-a66b-445e-a915-635b59b0e12f" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="955e6fae-f163-4174-885d-a030f7779881" name="Thursday">
+                  <elementDefinition Id="3090ea22-d111-4bbd-9303-fe6ec4491385" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="4e5419e3-9020-4166-97c1-d81643471667" name="Friday">
+                  <elementDefinition Id="467086df-02b5-486e-a481-372e55de526c" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="ffa107ed-4806-49f6-9ca3-d384011ea173" name="Sadurday">
+                  <elementDefinition Id="9d6deba7-c655-4f28-b342-662952af9427" />
+                </enumerationLiteral>
+              </ownedLiterals>
+            </enumeration>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="db53286b-f53e-4eaa-84fd-096436e33044" name="Years">
+        <elementDefinition Id="5af574ee-9991-4a00-81e9-c04443b623e9" />
+        <suppliersInternal>
+          <dependency Id="62ed749c-176f-4a12-8bd1-92b436b1d192">
+            <packageMoniker Id="e5c324c8-a0f9-4a09-b117-fb751e15cafa" LastKnownName="Months" />
+            <elementDefinition Id="aef78fcc-b422-4960-9642-30147b8b44b3" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="dfcafcdf-01ff-45d9-a4e9-4050cfa1f69c" name="Year" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <appliedStereotypesInternal>
+                <stereotypeInstance Id="1a9cf27d-42e8-45b6-b14b-836f11baf7b3" name="type" profile="StandardProfileL2">
+                  <elementDefinition Id="2b37c7a3-7f9f-4b51-99c2-5a3a9480db8a" />
+                </stereotypeInstance>
+              </appliedStereotypesInternal>
+              <elementDefinition Id="15c9843f-f894-4bb5-93c6-66545af1506b" />
+              <ownedAttributesInternal>
+                <property Id="a2aed714-29d8-40b1-8121-fda9b91f7268" name="Next" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e9751680-42d4-459d-824c-06a4d225f907" />
+                </property>
+                <property Id="cc89c271-e630-45cd-a0cb-472a14300ae0" name="Prev" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="43f955b4-972b-4435-b7f8-d24f0988d5da" />
+                </property>
+                <property Id="0a0b9c10-0652-4718-a63e-65054a6b6663" name="IsLeap" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="81796297-1b73-45a2-a2a8-c439de235ffd" />
+                </property>
+                <property Id="f57d8a3c-f69d-4bc5-86de-6e6b36af729b" name="NMonths" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b2466b93-e45e-47bb-a42f-fd8ab6ebd564" />
+                </property>
+                <property Id="40e0e399-1ccc-404c-a960-4b0b9f0ac0d5" name="Months" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="03605e3d-c647-429e-963d-6ec63e6f6360" />
+                </property>
+                <property Id="0471573d-0123-4d22-ba88-f5bf1b0d0f8e" name="Num" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b210b2b-4fe2-440a-a0ae-9d6b83f46445" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="04cba7d5-29ce-4b15-8690-0af4760c5add" name="Year" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="efc0a38f-6cc5-4a52-a215-22500580f1d4" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ec7f3421-a759-4a9b-a07d-6ec6f50bf43f" name="int y" direction="In" isUnique="false">
+                        <elementDefinition Id="394aa2e2-1de2-4267-921b-769116d22c52" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="5901273d-d69b-40e5-9a78-92ac7aa240e2" name="Year" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a6dafa8f-465c-4e94-afbe-1f9e44dbb205" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b8224b17-ef12-4ba9-9770-586d2eb27b24" name="int y" direction="In" isUnique="false">
+                        <elementDefinition Id="ce59c201-f558-48d5-946f-13a8fefd8368" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e83f69a2-3547-4be9-b819-4601fc96017a" name="bool isLeap" direction="In" isUnique="false">
+                        <elementDefinition Id="f5c97d1a-e224-4904-9181-5c82506edc95" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ba8e1040-2e4c-4644-abc5-307bd2bbe869" name="SolarYear" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <appliedStereotypesInternal>
+                <stereotypeInstance Id="deecb9ff-abfe-438b-a4ca-58eee41da732" name="type" profile="StandardProfileL2">
+                  <elementDefinition Id="0aba98aa-042a-4322-ad0b-79c6bf3d6085" />
+                </stereotypeInstance>
+              </appliedStereotypesInternal>
+              <elementDefinition Id="33efec2e-ef05-4b37-bfd1-a05144aeb9e4" />
+              <generalsInternal>
+                <generalization Id="189a402f-17f5-4030-85e0-55aa42640612" isSubstitutable="false">
+                  <classMoniker Id="dfcafcdf-01ff-45d9-a4e9-4050cfa1f69c" LastKnownName="Year" />
+                  <elementDefinition Id="5e3ea366-e42c-4ca3-9c3e-d0622d44e4a3" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b08a25fe-89cc-466e-8583-306e32b6f231" name="LunarYear" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2a4718a6-f889-4e2e-aee7-7a7e0d0a33f1" />
+              <generalsInternal>
+                <generalization Id="36c7b7e6-760a-44b9-a4ec-8346f0b7cd14" isSubstitutable="false">
+                  <classMoniker Id="dfcafcdf-01ff-45d9-a4e9-4050cfa1f69c" LastKnownName="Year" />
+                  <elementDefinition Id="001e3dcb-e576-496e-a18a-45ec9631133d" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="202693ea-5f27-4da7-88d0-8e1e08107714" name="Models">
+    <elementDefinition Id="f2de37f4-533f-4e12-a6d1-c3298d588f6b" />
+  </package>
+</logicalClassDesignerModel>
