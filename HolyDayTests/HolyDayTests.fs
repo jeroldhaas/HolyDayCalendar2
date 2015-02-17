@@ -21,4 +21,5 @@ let hebScriptCal = CalendarSystem.GetHebrewCalendar(bibNumbering)
 let hebrewNodaNow = nodaNow.WithCalendar(hebCivilCal)
 let scripturalNodaNow = nodaNow.WithCalendar(hebScriptCal)
 
+let dow = nodaNow.DayOfWeek
 

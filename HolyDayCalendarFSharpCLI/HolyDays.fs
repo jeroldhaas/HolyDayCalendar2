@@ -48,7 +48,6 @@ type Month(num: int, name: NamedMonth, numDays: int) =
     let MonthName   = name
     let NumDays     = numDays
 
-
 type Year(num, isLeap) =
     let yearNum    = num
     let isLeapYear = isLeap
@@ -131,3 +130,26 @@ module HolyDay =
                 Length  = 1;
             };
         ]
+
+open NodaTime
+
+let getDaysFromSaturday day =
+    let daysPrev = 0
+    let rec f (day: LocalDate) backcount =
+        match day.DayOfWeek with
+        | 6 -> backcount
+        | _ ->
+            let span = Period.FromDays(int64 1)
+            let prevDay = day - span
+            f prevDay (backcount + 1)
+    f day daysPrev
+
+let findFirstSaturday (thisDay: LocalDate) =
+    let thisNewYears = new LocalDate(thisDay.Year, 1, 1)
+    let rec f (day: LocalDate) =
+        match day.DayOfWeek with
+        | 6 -> day
+        | _ ->
+            let nextDay = day + Period.FromDays(int64 1)
+            f nextDay
+    f thisNewYears
