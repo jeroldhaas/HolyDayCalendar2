@@ -17,6 +17,7 @@ let bibNumbering = Calendars.HebrewMonthNumbering.Scriptural
 let hebCivilCal = CalendarSystem.GetHebrewCalendar(civilNumbering)
 let hebScriptCal = CalendarSystem.GetHebrewCalendar(bibNumbering)
 
+
 let hebrewNodaNow = nodaNow.WithCalendar(hebCivilCal)
 let scripturalNodaNow = nodaNow.WithCalendar(hebScriptCal)
 
