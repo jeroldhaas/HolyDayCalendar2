@@ -61,11 +61,11 @@ module HolyDay =
 
     type HolyDay =
         {
-            Name: string;
-            Month: int option;
-            Day: int option;
+            Name:    string;
+            Month:   int option;
+            Day:     int option;
             Weekday: DayOfWeek option;
-            Length: int;
+            Length:  int;
         }
 
     let Days =
