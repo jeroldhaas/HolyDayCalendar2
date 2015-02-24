@@ -1,62 +1,90 @@
-﻿module HolyDays
+﻿namespace HolyDayCalendar
 
 
-type DayOfWeek  =
-    | UNSET     = 0
-    | Sunday    = 1
-    | Monday    = 2
-    | Tuesday   = 3
-    | Wednesday = 4
-    | Thursday  = 5
-    | Friday    = 6
-    | Saturday  = 7
+module CalendarUtils =
 
-type SolarMonth =
-    | January   = 0
-    | February  = 1
-    | March     = 2
-    | April     = 3
-    | May       = 4
-    | June      = 5
-    | July      = 6
-    | August    = 7
-    | September = 8
-    | October   = 9
-    | November  = 10
-    | December  = 11
+    type DayOfWeek  =
+        | UNSET     = 0
+        | Sunday    = 1
+        | Monday    = 2
+        | Tuesday   = 3
+        | Wednesday = 4
+        | Thursday  = 5
+        | Friday    = 6
+        | Saturday  = 7
 
-type LunarMonth   =
-    | Tishri      = 0
-    | Heshvan     = 1
-    | Kislev      = 2
-    | Tebeth      = 3
-    | Shebat      = 4
-    | ``Adar I``  = 5
-    | ``Adar II`` = 6
-    | Nisan       = 7
-    | Iyar        = 8
-    | Sivan       = 9
-    | Tammuz      = 10
-    | Ab          = 11
-    | Elul        = 12
-    | Adar        = 13
+    type SolarMonth =
+        | January   = 0
+        | February  = 1
+        | March     = 2
+        | April     = 3
+        | May       = 4
+        | June      = 5
+        | July      = 6
+        | August    = 7
+        | September = 8
+        | October   = 9
+        | November  = 10
+        | December  = 11
 
-type NamedMonth = | SolarMonth | LunarMonth
+    type LunarMonth   =
+        | Tishri      = 0
+        | Heshvan     = 1
+        | Kislev      = 2
+        | Tebeth      = 3
+        | Shebat      = 4
+        | ``Adar I``  = 5
+        | ``Adar II`` = 6
+        | Nisan       = 7
+        | Iyar        = 8
+        | Sivan       = 9
+        | Tammuz      = 10
+        | Ab          = 11
+        | Elul        = 12
+        | Adar        = 13
 
-type Month(num: int, name: NamedMonth, numDays: int) =
-    let MonthNumber = num
-    let MonthName   = name
-    let NumDays     = numDays
+    type NamedMonth = | SolarMonth | LunarMonth
 
-type Year(num, isLeap) =
-    let yearNum    = num
-    let isLeapYear = isLeap
+    type Month(num: int, name: NamedMonth, numDays: int) =
+        let MonthNumber = num
+        let MonthName   = name
+        let NumDays     = numDays
 
-    new(num) =
-        new Year(num, false)
+    type Year(num, isLeap) =
+        let yearNum    = num
+        let isLeapYear = isLeap
+
+        new(num) =
+            new Year(num, false)
+
+
+    open NodaTime
+
+    let getDaysFromSaturday day =
+        let daysPrev = 0
+        let rec f (day: LocalDate) backcount =
+            match day.DayOfWeek with
+            | 6 -> backcount
+            | _ ->
+                let span = Period.FromDays(int64 1)
+                let prevDay = day - span
+                f prevDay (backcount + 1)
+        f day daysPrev
+
+    let findFirstSaturday (thisDay: LocalDate) =
+        let thisNewYears = new LocalDate(thisDay.Year, 1, 1)
+        let rec f (day: LocalDate) =
+            match day.DayOfWeek with
+            | 6 -> day
+            | _ ->
+                let nextDay = day + Period.FromDays(int64 1)
+                f nextDay
+        f thisNewYears
+
 
 
 module HolyDay =
+    open CalendarUtils
 
     type HolyDay =
         {
@@ -135,25 +163,4 @@ module HolyDay =
             };
         ]
 
-open NodaTime
 
-let getDaysFromSaturday day =
-    let daysPrev = 0
-    let rec f (day: LocalDate) backcount =
-        match day.DayOfWeek with
-        | 6 -> backcount
-        | _ ->
-            let span = Period.FromDays(int64 1)
-            let prevDay = day - span
-            f prevDay (backcount + 1)
-    f day daysPrev
-
-let findFirstSaturday (thisDay: LocalDate) =
-    let thisNewYears = new LocalDate(thisDay.Year, 1, 1)
-    let rec f (day: LocalDate) =
-        match day.DayOfWeek with
-        | 6 -> day
-        | _ ->
-            let nextDay = day + Period.FromDays(int64 1)
-            f nextDay
-    f thisNewYears
