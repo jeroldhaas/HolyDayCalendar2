@@ -68,9 +68,7 @@ module HolyDay =
         }
 
     let Days =
-        // TODO: double-check and correct as needed.
-        // some of these items are based on day-from
-        // rules, so need to be expanded rules
+        // rules found from
         // http://afaithfulversion.org/leviticus-23/
         [
             // 14th day of the 1st month
@@ -81,7 +79,7 @@ module HolyDay =
                 Weekday = None;
                 Length  = 1;
             };
-            { // TODO: discovery - Numbers 9:6-13
+            { // Additional feast from Numbers 9:6-13
                 Name    = "2nd Passover";
                 Month   = Some 2;
                 Day     = Some 14;
