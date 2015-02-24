@@ -69,11 +69,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="nunit.core">
-      <HintPath>..\HolyDayCalendarFSharpCLI\packages\NUnitTestAdapter.WithFramework.1.2\lib\nunit.core.dll</HintPath>
+      <HintPath>..\HolyDayCalendarFSharpCLI\packages\NUnitTestAdapter.1.2\lib\nunit.core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.core.interfaces">
-      <HintPath>..\HolyDayCalendarFSharpCLI\packages\NUnitTestAdapter.WithFramework.1.2\lib\nunit.core.interfaces.dll</HintPath>
+      <HintPath>..\HolyDayCalendarFSharpCLI\packages\NUnitTestAdapter.1.2\lib\nunit.core.interfaces.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -81,11 +81,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="nunit.util">
-      <HintPath>..\HolyDayCalendarFSharpCLI\packages\NUnitTestAdapter.WithFramework.1.2\lib\nunit.util.dll</HintPath>
+      <HintPath>..\HolyDayCalendarFSharpCLI\packages\NUnitTestAdapter.1.2\lib\nunit.util.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="NUnit.VisualStudio.TestAdapter">
-      <HintPath>..\HolyDayCalendarFSharpCLI\packages\NUnitTestAdapter.WithFramework.1.2\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <HintPath>..\HolyDayCalendarFSharpCLI\packages\NUnitTestAdapter.1.2\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -97,10 +97,17 @@
   <ItemGroup>
     <Compile Include="NUnitRunner.fs" />
     <Compile Include="ExampleTests.fs" />
+    <Compile Include="HolyDayTests.fs" />
     <None Include="Script.fsx" />
     <None Include="packages.config" />
     <None Include="App.config" />
-    <Compile Include="HolyDayTests.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HolyDayCalendarFSharpCLI\HolyDayCalendarFSharpCLI.fsproj">
+      <Name>HolyDayCalendarFSharpCLI</Name>
+      <Project>{66c86477-b7f2-4715-9daf-25efde2c9bf1}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '11.0'">

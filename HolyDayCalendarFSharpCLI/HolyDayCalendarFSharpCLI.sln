@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HolyDayCalendarFSharpCLI", "HolyDayCalendarFSharpCLI.fsproj", "{66C86477-B7F2-4715-9DAF-25EFDE2C9BF1}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HolyDayTests", "..\HolyDayTests\HolyDayTests.fsproj", "{4495D63E-5DCA-47DE-A102-80E74B34C798}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4E151330-C8E2-4AAD-9C40-BF1A5C98B2E8}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
@@ -24,10 +22,6 @@ Global
 		{66C86477-B7F2-4715-9DAF-25EFDE2C9BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66C86477-B7F2-4715-9DAF-25EFDE2C9BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66C86477-B7F2-4715-9DAF-25EFDE2C9BF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4495D63E-5DCA-47DE-A102-80E74B34C798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4495D63E-5DCA-47DE-A102-80E74B34C798}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4495D63E-5DCA-47DE-A102-80E74B34C798}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4495D63E-5DCA-47DE-A102-80E74B34C798}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0D7B8246-441E-4B5E-A16C-67E581D17524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0D7B8246-441E-4B5E-A16C-67E581D17524}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D7B8246-441E-4B5E-A16C-67E581D17524}.Release|Any CPU.ActiveCfg = Release|Any CPU
